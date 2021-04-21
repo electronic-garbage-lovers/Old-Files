@@ -1,0 +1,88 @@
+;#<FEEDBACK># ARM Linker, 5060750: Last Updated: Thu Nov 19 08:08:47 2020
+;VERSION 0.2
+;FILE clk.o
+CLK_DisableCKO <= USED 0
+CLK_DisableModuleClock <= USED 0
+CLK_DisablePLL <= USED 0
+CLK_DisableSysTick <= USED 0
+CLK_DisableXtalRC <= USED 0
+CLK_EnableCKO <= USED 0
+CLK_EnablePLL <= USED 0
+CLK_EnableSysTick <= USED 0
+CLK_EnableXtalRC <= USED 0
+CLK_GetCPUFreq <= USED 0
+CLK_GetHCLKFreq <= USED 0
+CLK_GetHXTFreq <= USED 0
+CLK_GetLXTFreq <= USED 0
+CLK_Idle <= USED 0
+CLK_PowerDown <= USED 0
+CLK_SetCoreClock <= USED 0
+__asm___5_clk_c_9b5832dc____REV16 <= USED 0
+__asm___5_clk_c_9b5832dc____REVSH <= USED 0
+;FILE gpio.o
+GPIO_DisableInt <= USED 0
+GPIO_EnableInt <= USED 0
+GPIO_SetMode <= USED 0
+__asm___6_gpio_c_f8f858a7____REV16 <= USED 0
+__asm___6_gpio_c_f8f858a7____REVSH <= USED 0
+;FILE i2c.o
+I2C_Close <= USED 0
+I2C_DisableInt <= USED 0
+I2C_DisableTimeout <= USED 0
+I2C_DisableWakeup <= USED 0
+I2C_EnableTimeout <= USED 0
+I2C_EnableWakeup <= USED 0
+I2C_GetBusClockFreq <= USED 0
+I2C_GetData <= USED 0
+I2C_GetIntFlag <= USED 0
+I2C_GetStatus <= USED 0
+I2C_SetBusClockFreq <= USED 0
+I2C_SetData <= USED 0
+I2C_SetSlaveAddrMask <= USED 0
+I2C_Trigger <= USED 0
+__asm___5_i2c_c_I2C_Open____REV16 <= USED 0
+__asm___5_i2c_c_I2C_Open____REVSH <= USED 0
+;FILE main.o
+__asm___6_main_c_ae965f01____REV16 <= USED 0
+__asm___6_main_c_ae965f01____REVSH <= USED 0
+;FILE retarget.o
+GetChar <= USED 0
+IsDebugFifoEmpty <= USED 0
+SendChar <= USED 0
+__asm___10_retarget_c_8c64092a____REV16 <= USED 0
+__asm___10_retarget_c_8c64092a____REVSH <= USED 0
+_ttywrch <= USED 0
+fgetc <= USED 0
+kbhit <= USED 0
+;FILE startup_mini58series.o
+;FILE sys.o
+SYS_ClearResetSrc <= USED 0
+SYS_DisableBOD <= USED 0
+SYS_EnableBOD <= USED 0
+SYS_GetBODStatus <= USED 0
+SYS_GetResetSrc <= USED 0
+SYS_IsRegLocked <= USED 0
+SYS_ReadPDID <= USED 0
+SYS_ResetCPU <= USED 0
+SYS_ResetChip <= USED 0
+__asm___5_sys_c_962b9fbe____REV16 <= USED 0
+__asm___5_sys_c_962b9fbe____REVSH <= USED 0
+;FILE system_mini58series.o
+SystemInit <= USED 0
+__asm___21_system_Mini58Series_c___HSI____REV16 <= USED 0
+__asm___21_system_Mini58Series_c___HSI____REVSH <= USED 0
+;FILE uart.o
+UART_ClearIntFlag <= USED 0
+UART_Close <= USED 0
+UART_DisableFlowCtrl <= USED 0
+UART_DisableInt <= USED 0
+UART_EnableFlowCtrl <= USED 0
+UART_EnableInt <= USED 0
+UART_Read <= USED 0
+UART_SelectIrDAMode <= USED 0
+UART_SelectRS485Mode <= USED 0
+UART_SetLine_Config <= USED 0
+UART_SetTimeoutCnt <= USED 0
+UART_Write <= USED 0
+__asm___6_uart_c_f12f5b44____REV16 <= USED 0
+__asm___6_uart_c_f12f5b44____REVSH <= USED 0

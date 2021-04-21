@@ -1,0 +1,174 @@
+Dependencies for Project 'I2C_Interrupt_EEPROM', Target 'I2C_Interrupt_EEPROM': (DO NOT MODIFY !)
+F (..\..\..\..\Library\Device\Nuvoton\Mini58Series\Source\system_Mini58Series.c)(0x5ECB87F1)(-c --cpu Cortex-M0 -g -O2 --apcs=interwork -I ..\..\..\..\Library\CMSIS\Include -I ..\..\..\..\Library\Device\Nuvoton\Mini58Series\Include -I ..\..\..\..\Library\StdDriver\inc-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527"-o .\obj\system_mini58series.o --omf_browse .\obj\system_mini58series.crf --depend .\obj\system_mini58series.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\..\Library\Device\Nuvoton\Mini58Series\Include\Mini58Series.h)(0x5ECB87F1)
+I (..\..\..\..\Library\CMSIS\Include\core_cm0.h)(0x5ECB87F1)
+I (..\..\..\..\Library\CMSIS\Include\core_cmInstr.h)(0x5ECB87F1)
+I (..\..\..\..\Library\CMSIS\Include\cmsis_armcc.h)(0x5ECB87F1)
+I (..\..\..\..\Library\CMSIS\Include\core_cmFunc.h)(0x5ECB87F1)
+I (..\..\..\..\Library\Device\Nuvoton\Mini58Series\Include\system_Mini58Series.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\sys.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\clk.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\acmp.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\adc.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\fmc.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\gpio.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\i2c.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\pwm.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\spi.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\timer.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\uart.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\wdt.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\wwdt.h)(0x5ECB87F1)
+F (..\..\..\..\Library\Device\Nuvoton\Mini58Series\Source\ARM\startup_Mini58Series.s)(0x5ECB87F1)(--cpu Cortex-M0 -g --16 --apcs=interwork -IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 527"--list .\lst\startup_mini58series.lst --xref -o .\obj\startup_mini58series.o --depend .\obj\startup_mini58series.d)
+F (..\main.c)(0x5FB75578)(-c --cpu Cortex-M0 -g -O2 --apcs=interwork -I ..\..\..\..\Library\CMSIS\Include -I ..\..\..\..\Library\Device\Nuvoton\Mini58Series\Include -I ..\..\..\..\Library\StdDriver\inc-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527"-o .\obj\main.o --omf_browse .\obj\main.crf --depend .\obj\main.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x599ECD2E)
+I (..\..\..\..\Library\Device\Nuvoton\Mini58Series\Include\Mini58Series.h)(0x5ECB87F1)
+I (..\..\..\..\Library\CMSIS\Include\core_cm0.h)(0x5ECB87F1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\..\Library\CMSIS\Include\core_cmInstr.h)(0x5ECB87F1)
+I (..\..\..\..\Library\CMSIS\Include\cmsis_armcc.h)(0x5ECB87F1)
+I (..\..\..\..\Library\CMSIS\Include\core_cmFunc.h)(0x5ECB87F1)
+I (..\..\..\..\Library\Device\Nuvoton\Mini58Series\Include\system_Mini58Series.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\sys.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\clk.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\acmp.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\adc.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\fmc.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\gpio.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\i2c.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\pwm.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\spi.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\timer.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\uart.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\wdt.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\wwdt.h)(0x5ECB87F1)
+F (..\..\..\..\Library\StdDriver\src\clk.c)(0x5ECB87F1)(-c --cpu Cortex-M0 -g -O2 --apcs=interwork -I ..\..\..\..\Library\CMSIS\Include -I ..\..\..\..\Library\Device\Nuvoton\Mini58Series\Include -I ..\..\..\..\Library\StdDriver\inc-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527"-o .\obj\clk.o --omf_browse .\obj\clk.crf --depend .\obj\clk.d)
+I (..\..\..\..\Library\Device\Nuvoton\Mini58Series\Include\Mini58Series.h)(0x5ECB87F1)
+I (..\..\..\..\Library\CMSIS\Include\core_cm0.h)(0x5ECB87F1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\..\Library\CMSIS\Include\core_cmInstr.h)(0x5ECB87F1)
+I (..\..\..\..\Library\CMSIS\Include\cmsis_armcc.h)(0x5ECB87F1)
+I (..\..\..\..\Library\CMSIS\Include\core_cmFunc.h)(0x5ECB87F1)
+I (..\..\..\..\Library\Device\Nuvoton\Mini58Series\Include\system_Mini58Series.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\sys.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\clk.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\acmp.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\adc.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\fmc.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\gpio.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\i2c.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\pwm.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\spi.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\timer.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\uart.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\wdt.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\wwdt.h)(0x5ECB87F1)
+F (..\..\..\..\Library\StdDriver\src\i2c.c)(0x5ECB87F1)(-c --cpu Cortex-M0 -g -O2 --apcs=interwork -I ..\..\..\..\Library\CMSIS\Include -I ..\..\..\..\Library\Device\Nuvoton\Mini58Series\Include -I ..\..\..\..\Library\StdDriver\inc-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527"-o .\obj\i2c.o --omf_browse .\obj\i2c.crf --depend .\obj\i2c.d)
+I (..\..\..\..\Library\Device\Nuvoton\Mini58Series\Include\Mini58Series.h)(0x5ECB87F1)
+I (..\..\..\..\Library\CMSIS\Include\core_cm0.h)(0x5ECB87F1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\..\Library\CMSIS\Include\core_cmInstr.h)(0x5ECB87F1)
+I (..\..\..\..\Library\CMSIS\Include\cmsis_armcc.h)(0x5ECB87F1)
+I (..\..\..\..\Library\CMSIS\Include\core_cmFunc.h)(0x5ECB87F1)
+I (..\..\..\..\Library\Device\Nuvoton\Mini58Series\Include\system_Mini58Series.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\sys.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\clk.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\acmp.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\adc.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\fmc.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\gpio.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\i2c.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\pwm.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\spi.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\timer.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\uart.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\wdt.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\wwdt.h)(0x5ECB87F1)
+F (..\..\..\..\Library\StdDriver\src\sys.c)(0x5ECB87F1)(-c --cpu Cortex-M0 -g -O2 --apcs=interwork -I ..\..\..\..\Library\CMSIS\Include -I ..\..\..\..\Library\Device\Nuvoton\Mini58Series\Include -I ..\..\..\..\Library\StdDriver\inc-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527"-o .\obj\sys.o --omf_browse .\obj\sys.crf --depend .\obj\sys.d)
+I (..\..\..\..\Library\Device\Nuvoton\Mini58Series\Include\Mini58Series.h)(0x5ECB87F1)
+I (..\..\..\..\Library\CMSIS\Include\core_cm0.h)(0x5ECB87F1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\..\Library\CMSIS\Include\core_cmInstr.h)(0x5ECB87F1)
+I (..\..\..\..\Library\CMSIS\Include\cmsis_armcc.h)(0x5ECB87F1)
+I (..\..\..\..\Library\CMSIS\Include\core_cmFunc.h)(0x5ECB87F1)
+I (..\..\..\..\Library\Device\Nuvoton\Mini58Series\Include\system_Mini58Series.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\sys.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\clk.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\acmp.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\adc.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\fmc.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\gpio.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\i2c.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\pwm.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\spi.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\timer.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\uart.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\wdt.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\wwdt.h)(0x5ECB87F1)
+F (..\..\..\..\Library\StdDriver\src\retarget.c)(0x5ECB87F1)(-c --cpu Cortex-M0 -g -O2 --apcs=interwork -I ..\..\..\..\Library\CMSIS\Include -I ..\..\..\..\Library\Device\Nuvoton\Mini58Series\Include -I ..\..\..\..\Library\StdDriver\inc-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527"-o .\obj\retarget.o --omf_browse .\obj\retarget.crf --depend .\obj\retarget.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\..\..\..\Library\Device\Nuvoton\Mini58Series\Include\Mini58Series.h)(0x5ECB87F1)
+I (..\..\..\..\Library\CMSIS\Include\core_cm0.h)(0x5ECB87F1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\..\Library\CMSIS\Include\core_cmInstr.h)(0x5ECB87F1)
+I (..\..\..\..\Library\CMSIS\Include\cmsis_armcc.h)(0x5ECB87F1)
+I (..\..\..\..\Library\CMSIS\Include\core_cmFunc.h)(0x5ECB87F1)
+I (..\..\..\..\Library\Device\Nuvoton\Mini58Series\Include\system_Mini58Series.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\sys.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\clk.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\acmp.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\adc.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\fmc.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\gpio.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\i2c.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\pwm.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\spi.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\timer.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\uart.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\wdt.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\wwdt.h)(0x5ECB87F1)
+F (..\..\..\..\Library\StdDriver\src\gpio.c)(0x5ECB87F1)(-c --cpu Cortex-M0 -g -O2 --apcs=interwork -I ..\..\..\..\Library\CMSIS\Include -I ..\..\..\..\Library\Device\Nuvoton\Mini58Series\Include -I ..\..\..\..\Library\StdDriver\inc-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527"-o .\obj\gpio.o --omf_browse .\obj\gpio.crf --depend .\obj\gpio.d)
+I (..\..\..\..\Library\Device\Nuvoton\Mini58Series\Include\Mini58Series.h)(0x5ECB87F1)
+I (..\..\..\..\Library\CMSIS\Include\core_cm0.h)(0x5ECB87F1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\..\Library\CMSIS\Include\core_cmInstr.h)(0x5ECB87F1)
+I (..\..\..\..\Library\CMSIS\Include\cmsis_armcc.h)(0x5ECB87F1)
+I (..\..\..\..\Library\CMSIS\Include\core_cmFunc.h)(0x5ECB87F1)
+I (..\..\..\..\Library\Device\Nuvoton\Mini58Series\Include\system_Mini58Series.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\sys.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\clk.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\acmp.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\adc.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\fmc.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\gpio.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\i2c.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\pwm.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\spi.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\timer.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\uart.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\wdt.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\wwdt.h)(0x5ECB87F1)
+F (..\..\..\..\Library\StdDriver\src\spi.c)(0x5ECB87F1)(-c --cpu Cortex-M0 -g -O2 --apcs=interwork -I ..\..\..\..\Library\CMSIS\Include -I ..\..\..\..\Library\Device\Nuvoton\Mini58Series\Include -I ..\..\..\..\Library\StdDriver\inc-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527"-o .\obj\spi.o --omf_browse .\obj\spi.crf --depend .\obj\spi.d)
+I (..\..\..\..\Library\Device\Nuvoton\Mini58Series\Include\Mini58Series.h)(0x5ECB87F1)
+I (..\..\..\..\Library\CMSIS\Include\core_cm0.h)(0x5ECB87F1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\..\Library\CMSIS\Include\core_cmInstr.h)(0x5ECB87F1)
+I (..\..\..\..\Library\CMSIS\Include\cmsis_armcc.h)(0x5ECB87F1)
+I (..\..\..\..\Library\CMSIS\Include\core_cmFunc.h)(0x5ECB87F1)
+I (..\..\..\..\Library\Device\Nuvoton\Mini58Series\Include\system_Mini58Series.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\sys.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\clk.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\acmp.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\adc.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\fmc.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\gpio.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\i2c.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\pwm.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\spi.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\timer.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\uart.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\wdt.h)(0x5ECB87F1)
+I (..\..\..\..\Library\StdDriver\inc\wwdt.h)(0x5ECB87F1)
