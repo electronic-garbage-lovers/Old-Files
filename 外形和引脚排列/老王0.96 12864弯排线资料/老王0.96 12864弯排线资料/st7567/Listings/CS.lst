@@ -1,0 +1,156 @@
+C51 COMPILER V9.00   CS                                                                    12/22/2020 08:17:40 PAGE 1   
+
+
+C51 COMPILER V9.00, COMPILATION OF MODULE CS
+OBJECT MODULE PLACED IN .\Objects\CS.obj
+COMPILER INVOKED BY: D:\Keil_v5\C51\BIN\C51.EXE CS.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\CS.lst
+                    -) TABS(2) OBJECT(.\Objects\CS.obj)
+
+line level    source
+
+   1          #include "stc15.h"
+   2          #include "codetab.h" 
+   3          
+   4          sbit RST=P2^5;
+   5          //sbit A0=P1^5;
+   6          sbit SCL=P3^1;
+   7          sbit SDA=P3^0;
+   8          
+   9          
+  10          
+  11          void delay()
+  12          {
+  13   1        unsigned int x=1000;
+  14   1        while(x--)
+  15   1          ;
+  16   1      }
+  17          
+  18          
+  19          void delay1()
+  20          {
+  21   1        unsigned int x=50000;
+  22   1        while(x--)
+  23   1          ;
+  24   1      }
+  25          
+  26          
+  27          void LCD_RW(bit i,unsigned char j)
+  28          {
+  29   1        unsigned char x;
+  30   1        if(i==0)  SDA=0;
+  31   1        else      SDA=1;
+  32   1        SCL=0;
+  33   1        SCL=1;
+  34   1        for(x=0;x<8;x++)
+  35   1        {
+  36   2          SDA=(bit)(j&0x80);
+  37   2          SCL=0;
+  38   2          j<<=1;
+  39   2          SCL=1;
+  40   2        }
+  41   1      }
+  42          
+  43          void LCD_Init()
+  44          {
+  45   1        RST=0;
+  46   1        delay();
+  47   1        delay();
+  48   1        RST=1;
+  49   1        delay();
+  50   1        delay();
+  51   1        LCD_RW(0,0xe2);
+  52   1        delay();
+  53   1        LCD_RW(0,0xa0);
+  54   1        LCD_RW(0,0xc8);
+C51 COMPILER V9.00   CS                                                                    12/22/2020 08:17:40 PAGE 2   
+
+  55   1        delay();
+  56   1        
+  57   1        LCD_RW(0,0x27);
+  58   1        LCD_RW(0,0x81);
+  59   1        LCD_RW(0,0x20);
+  60   1        delay();
+  61   1        LCD_RW(0,0x2c);
+  62   1        LCD_RW(0,0x2e);
+  63   1        LCD_RW(0,0x2f);
+  64   1        delay();
+  65   1        LCD_RW(0,0xaf);
+  66   1        delay();
+  67   1      }
+  68          
+  69          void LCD_Clear(unsigned char dat)
+  70          {
+  71   1        unsigned char i,j; 
+  72   1        for(j=0;j<8;j++)
+  73   1        { 
+  74   2          LCD_RW(0,0xb0+j);
+  75   2          LCD_RW(0,0x10); 
+  76   2          LCD_RW(0,0x00); 
+  77   2          for(i=0;i<128;i++)
+  78   2          {
+  79   3            LCD_RW(1,dat);
+  80   3          }
+  81   2        }
+  82   1      }
+  83          
+  84          
+  85          void printf_c8(unsigned char x,unsigned char y, unsigned char c)
+  86          {
+  87   1        unsigned char i;
+  88   1        c-=' ';
+  89   1        LCD_RW(0,0xb0+y);
+  90   1        LCD_RW(0,0x10|(x>>4));
+  91   1        LCD_RW(0,x&0x0f);
+  92   1        for(i=0;i<6;i++)
+  93   1          LCD_RW(1,F6x8[c][i]);
+  94   1      }
+  95          
+  96          
+  97          void printf_8(unsigned char x, unsigned char y, unsigned char *s) 
+  98          {
+  99   1        unsigned int z;
+ 100   1        z=0;
+ 101   1        while(*s) 
+ 102   1        {
+ 103   2          if((x+z)<=122)  
+ 104   2          {
+ 105   3            printf_c8(x+z,y,*s);
+ 106   3            z+=6;
+ 107   3            s++;
+ 108   3          }
+ 109   2        } 
+ 110   1      }
+ 111          
+ 112          void main()
+ 113          {
+ 114   1        unsigned char k;
+ 115   1        LCD_Init();
+ 116   1        LCD_Clear(0x00);
+C51 COMPILER V9.00   CS                                                                    12/22/2020 08:17:40 PAGE 3   
+
+ 117   1        printf_8(0, 1, "123456") ;
+ 118   1          printf_8(0, 3,"789456") ;
+ 119   1        while(1)
+ 120   1        {
+ 121   2          printf_c8(0,0,k++);
+ 122   2          delay1();
+ 123   2          delay1();
+ 124   2          printf_c8(0,2,k++);
+ 125   2          delay1();
+ 126   2          delay1();
+ 127   2        }
+ 128   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    446    ----
+   CONSTANT SIZE    =    566    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----       8
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----       1
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

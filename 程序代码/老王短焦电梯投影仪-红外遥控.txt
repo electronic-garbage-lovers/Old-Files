@@ -1,0 +1,122 @@
+说明：
+ 发射下面的红外码，然后学习到手机或万能遥控器上。
+发射使用的是串口到IR的转换板，TTL CODE 是这个转换板的串口指令 后三个字节是NEC码 也可以用别的硬件来发射
+4.0fu置文本￥zCU5c7AJ47N$达开桃宝或点几链街 https://m.tb.cn/h.41jWewe 至浏.览览.器【红外解码模块 编码模块 红外无线通信 NEC码 接收发射 串口通信】
+
+
+安卓KEY         TTL CODE        投影仪操作
+=============基本按键===========================
+KEY_POWER	a1 f1 02 7d 46	电源
+
+
+KEY_RIGHT	a1 f1 02 7d 49	右
+KEY_LEFT	a1 f1 02 7d 4e	左
+KEY_UP		a1 f1 02 7d 48	上
+KEY_DOWN	a1 f1 02 7d 4d	下
+KEY_ENTER	a1 f1 02 7d 4a	OK
+KEY_BACK	a1 f1 02 7d 0d	返回
+KEY_MENU	a1 f1 02 7d 45	菜单
+
+KEY_VOLUMEUP	a1 f1 02 7d 0f	音量+
+KEY_VOLUMEDOWN	a1 f1 02 7d 5a	音量-
+KEY_MUTE	a1 f1 02 7d 4c	静音
+
+KEY_HOME	a1 f1 02 7d 42	主页
+
+==============待测试功能==================================
+KEY_0		a1 f1 02 7d 00
+KEY_1		a1 f1 02 7d 01
+KEY_2		a1 f1 02 7d 02
+KEY_3		a1 f1 02 7d 06
+KEY_4		a1 f1 02 7d 04
+KEY_5		a1 f1 02 7d 05
+KEY_6		a1 f1 02 7d 06
+KEY_7		a1 f1 02 7d 07
+KEY_8		a1 f1 02 7d 08
+KEY_9		a1 f1 02 7d 09
+KEY_CHANNELUP	a1 f1 02 7d 0c
+
+
+KEY_F10		a1 f1 02 7d 10
+KEY_BLUE	a1 f1 02 7d 11
+KEY_F7		a1 f1 02 7d 12	信号源AV ?
+KEY_GREEN	a1 f1 02 7d 13
+KEY_FN_F10	a1 f1 02 7d 14
+KEY_FN_F4	a1 f1 02 7d 15
+KEY_FN_F8	a1 f1 02 7d 16
+KEY_FN_F2	a1 f1 02 7d 17
+KEY_F12		a1 f1 02 7d 18
+KEY_CHANNELDOWN	a1 f1 02 7d 19
+KEY_F1		a1 f1 02 7d 1a	截屏?
+KEY_F4		a1 f1 02 7d 30
+KEY_F5		a1 f1 02 7d 31
+KEY_NUMLOCK	a1 f1 02 7d 32
+KEY_SCROLLLOCK	a1 f1 02 7d 33
+KEY_SLEEP	a1 f1 02 7d 40
+
+KEY_AUDIO	a1 f1 02 7d 43
+KEY_TV		a1 f1 02 7d 44
+
+KEY_CAMERA	a1 f1 02 7d 47
+
+
+
+KEY_FN_F6	a1 f1 02 7d 4b
+
+
+
+KEY_INFO	a1 f1 02 7d 4f
+KEY_YELLOW	a1 f1 02 7d 50
+KEY_EPG		a1 f1 02 7d 51
+KEY_RED		a1 f1 02 7d 52
+KEY_F6		a1 f1 02 7d 53
+KEY_FN_F3	a1 f1 02 7d 54
+KEY_FN_F9	a1 f1 02 7d 55
+KEY_FN_F1	a1 f1 02 7d 56
+KEY_FN_F5	a1 f1 02 7d 57
+KEY_FN_F7	a1 f1 02 7d 58
+KEY_F11		a1 f1 02 7d 59
+
+KEY_ZOOM	a1 f1 02 7d 5b
+KEY_F13		a1 f1 02 7d 5c
+KEY_F14		a1 f1 02 7d 5d	信号源HDMI ?
+KEY_F8		a1 f1 02 7d 5e
+KEY_F15		a1 f1 02 7d 5f
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

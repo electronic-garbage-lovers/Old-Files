@@ -1,0 +1,5 @@
+--cpu Cortex-M3 -g --apcs=interwork 
+-I C:\Keil\ARM\RV31\INC 
+-I C:\Keil\ARM\CMSIS\Include 
+-I C:\Keil\ARM\Inc\ST\STM32F10x 
+--list ".\ppu_asm.lst" --xref -o "..\OBJ\ppu_asm.o" --depend "..\OBJ\ppu_asm.d" "..\HARDWARE\NES\ppu_asm.s"

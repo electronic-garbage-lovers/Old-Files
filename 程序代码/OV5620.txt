@@ -1,0 +1,34 @@
+1	GND
+2	SCL
+3	SDA
+4	VSYNC
+5	HREF
+6 	Y9
+7	Y8
+8	Y7
+9	Y6
+10	Y5
+11	Y4
+12	Y3
+13	Y2
+14	Y1
+15	Y0
+16	RESET_B
+17	XVCLK
+18	GND
+19	PCLK
+20	GND
+21	VCC	
+22	FREX		frame exposure control 1
+23	GND
+24	CE?
+25	
+26	GND
+27	EXP_STB		frame exposure control 2
+
+
+
+
+
+
+CL9193A28L5M   LDO电源线性稳压IC器

@@ -1,0 +1,20 @@
+Dependencies for Project 'MLX90640_TEST_MCU32', Target 'Target 1': (DO NOT MODIFY !)
+F (.\main.c)(0x5DA958C5)(--c99 --gnu -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-Ie:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-Ie:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_XL-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (cpu.h)(0x5DA84A5C)
+I (IIC.h)(0x5DA84590)
+I (MLX90640.h)(0x5DA91203)
+I (MLX90640_ExFun.h)(0x5DA94D1B)
+F (.\cpu.c)(0x5DA84A26)(--c99 --gnu -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-Ie:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-Ie:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_XL-o .\objects\cpu.o --omf_browse .\objects\cpu.crf --depend .\objects\cpu.d)
+I (cpu.h)(0x5DA84A5C)
+F (.\IIC.c)(0x5DA849D8)(--c99 --gnu -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-Ie:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-Ie:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_XL-o .\objects\iic.o --omf_browse .\objects\iic.crf --depend .\objects\iic.d)
+I (cpu.h)(0x5DA84A5C)
+I (iic.h)(0x5DA84590)
+F (.\MLX90640.c)(0x5DA91243)(--c99 --gnu -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-Ie:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-Ie:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_XL-o .\objects\mlx90640.o --omf_browse .\objects\mlx90640.crf --depend .\objects\mlx90640.d)
+I (iic.h)(0x5DA84590)
+I (cpu.h)(0x5DA84A5C)
+I (MLX90640.h)(0x5DA91203)
+I (e:\Keil_v5\ARM\ARMCC\include\math.h)(0x599ECD2E)
+F (.\MLX90640_ExFun.c)(0x5DA94E4B)(--c99 --gnu -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-Ie:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-Ie:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_XL-o .\objects\mlx90640_exfun.o --omf_browse .\objects\mlx90640_exfun.crf --depend .\objects\mlx90640_exfun.d)
+I (MLX90640_ExFun.h)(0x5DA94D1B)
+I (cpu.h)(0x5DA84A5C)
+I (e:\Keil_v5\ARM\ARMCC\include\math.h)(0x599ECD2E)

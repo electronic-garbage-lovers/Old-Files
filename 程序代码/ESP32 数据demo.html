@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+<h1>Hello, ESP32</h1>
+<div id="control"></div>
+<table style="border: gray dashed 2px">
+    <thead>
+    <tr>
+        <th>名称</th>
+        <th>数值</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+<script>
+    let $ = v => document.querySelector(v),
+        $c = v => document.createElement(v)
+    a = [
+        ["Test1", "/www/a", a => a],
+        ["Test2", "abc", a => a + "%"]
+    ]
+    for (const elem of a) {
+        let tr = $c("tr")
+        tr.innerHTML = `<th>${elem[0]}</th>`
+        let value = document.createElement("th")
+        tr.appendChild(value)
+        $("tbody").appendChild(tr)
+        setInterval(async _ => {
+            value.innerText = elem[2](await fetch(elem[1]))
+        }, 1000)
+    }
+</script>
+</body>
+</html>

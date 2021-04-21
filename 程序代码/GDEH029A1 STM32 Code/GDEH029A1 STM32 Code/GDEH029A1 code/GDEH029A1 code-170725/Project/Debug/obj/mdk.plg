@@ -1,0 +1,279 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+E:\DUAN\≤‚ ‘∞Ê&DEMO∞Â\GDE029A1\GDE029A1≥Ã–Ú æ¿˝\Project\mdk.uvproj
+Project File Date:  11/22/2015
+
+<h2>Output:</h2>
+Build target 'mdk'
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_tim.c...
+compiling misc.c...
+compiling stm32f10x_iwdg.c...
+compiling system_stm32f10x.c...
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling stm32f10x_it.c...
+compiling main.c...
+compiling Display_EPD_W21.c...
+linking...
+Program Size: Code=6180 RO-data=19344 RW-data=52 ZI-data=1636  
+FromELF: creating hex file...
+".\Debug\obj\mdk.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\DUAN\\≤‚ ‘∞Ê&DEMO∞Â\\GDE029A1\\GDE029A1≥Ã–Ú æ¿˝\\Project\\Debug\\obj\\mdk.AXF" 
+* JLink Info: Device "STM32F103C8" selected (64 KB flash, 20 KB RAM).
+Set JLink Project File to "E:\DUAN\≤‚ ‘∞Ê&DEMO∞Â\GDE029A1\GDE029A1≥Ã–Ú æ¿˝\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.35b, compiled Sep  2 2011 18:34:46
+Firmware: J-Link V9 compiled Feb 20 2015 09:20:19
+Hardware: V9.20
+Feature(s) : GDB, RDI, FlashBP, FlashDL, JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103C8
+VTarget = 3.277V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'mdk'
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_tim.c...
+compiling misc.c...
+compiling stm32f10x_iwdg.c...
+compiling system_stm32f10x.c...
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling stm32f10x_it.c...
+compiling main.c...
+compiling Display_EPD_W21.c...
+linking...
+Program Size: Code=6184 RO-data=19344 RW-data=52 ZI-data=1636  
+FromELF: creating hex file...
+".\Debug\obj\mdk.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\DUAN\\≤‚ ‘∞Ê&DEMO∞Â\\GDE029A1\\GDE029A1≥Ã–Ú æ¿˝\\Project\\Debug\\obj\\mdk.AXF" 
+* JLink Info: Device "STM32F103C8" selected (64 KB flash, 20 KB RAM).
+Set JLink Project File to "E:\DUAN\≤‚ ‘∞Ê&DEMO∞Â\GDE029A1\GDE029A1≥Ã–Ú æ¿˝\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.35b, compiled Sep  2 2011 18:34:46
+Firmware: J-Link V9 compiled Feb 20 2015 09:20:19
+Hardware: V9.20
+Feature(s) : GDB, RDI, FlashBP, FlashDL, JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103C8
+VTarget = 3.275V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'mdk'
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_tim.c...
+compiling misc.c...
+compiling stm32f10x_iwdg.c...
+compiling system_stm32f10x.c...
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling stm32f10x_it.c...
+compiling main.c...
+compiling Display_EPD_W21.c...
+linking...
+Program Size: Code=6184 RO-data=19344 RW-data=52 ZI-data=1636  
+FromELF: creating hex file...
+".\Debug\obj\mdk.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\DUAN\\≤‚ ‘∞Ê&DEMO∞Â\\GDE029A1\\GDE029A1≥Ã–Ú æ¿˝\\Project\\Debug\\obj\\mdk.AXF" 
+* JLink Info: Device "STM32F103C8" selected (64 KB flash, 20 KB RAM).
+Set JLink Project File to "E:\DUAN\≤‚ ‘∞Ê&DEMO∞Â\GDE029A1\GDE029A1≥Ã–Ú æ¿˝\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.35b, compiled Sep  2 2011 18:34:46
+Firmware: J-Link V9 compiled Feb 20 2015 09:20:19
+Hardware: V9.20
+Feature(s) : GDB, RDI, FlashBP, FlashDL, JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103C8
+VTarget = 3.275V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          0
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'mdk'
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_tim.c...
+compiling misc.c...
+compiling stm32f10x_iwdg.c...
+compiling system_stm32f10x.c...
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling stm32f10x_it.c...
+compiling main.c...
+compiling Display_EPD_W21.c...
+linking...
+Program Size: Code=6184 RO-data=19344 RW-data=52 ZI-data=1636  
+FromELF: creating hex file...
+".\Debug\obj\mdk.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\DUAN\\≤‚ ‘∞Ê&DEMO∞Â\\GDE029A1\\GDE029A1≥Ã–Ú æ¿˝\\Project\\Debug\\obj\\mdk.AXF" 
+* JLink Info: Device "STM32F103C8" selected (64 KB flash, 20 KB RAM).
+Set JLink Project File to "E:\DUAN\≤‚ ‘∞Ê&DEMO∞Â\GDE029A1\GDE029A1≥Ã–Ú æ¿˝\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.35b, compiled Sep  2 2011 18:34:46
+Firmware: J-Link V9 compiled Feb 20 2015 09:20:19
+Hardware: V9.20
+Feature(s) : GDB, RDI, FlashBP, FlashDL, JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103C8
+VTarget = 3.277V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          0
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'mdk'
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_tim.c...
+compiling misc.c...
+compiling stm32f10x_iwdg.c...
+compiling system_stm32f10x.c...
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling stm32f10x_it.c...
+compiling main.c...
+compiling Display_EPD_W21.c...
+linking...
+Program Size: Code=6188 RO-data=19344 RW-data=52 ZI-data=1636  
+FromELF: creating hex file...
+".\Debug\obj\mdk.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\DUAN\\≤‚ ‘∞Ê&DEMO∞Â\\GDE029A1\\GDE029A1≥Ã–Ú æ¿˝\\Project\\Debug\\obj\\mdk.AXF" 
+* JLink Info: Device "STM32F103C8" selected (64 KB flash, 20 KB RAM).
+Set JLink Project File to "E:\DUAN\≤‚ ‘∞Ê&DEMO∞Â\GDE029A1\GDE029A1≥Ã–Ú æ¿˝\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.35b, compiled Sep  2 2011 18:34:46
+Firmware: J-Link V9 compiled Feb 20 2015 09:20:19
+Hardware: V9.20
+Feature(s) : GDB, RDI, FlashBP, FlashDL, JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103C8
+VTarget = 3.275V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          0
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.

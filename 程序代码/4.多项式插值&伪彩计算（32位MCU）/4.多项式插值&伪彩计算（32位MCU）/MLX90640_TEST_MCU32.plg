@@ -1,0 +1,16 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+F:\我的程序\单片机程序\红外成像仪\用户资料\4.MLX90640读写例程（8位32位API工程模板）\4.多项式插值&伪彩计算（32位MCU）\MLX90640_TEST_MCU32.uvproj
+Project File Date:  10/18/2019
+
+<h2>Output:</h2>
+Build target 'MLX90640_TEST_MCU32'
+compiling main.c...
+compiling MLX90640.c...
+compiling MLX90640_ExFun.c...
+linking...
+Program Size: Code=21038 RO-data=3842 RW-data=0 ZI-data=1632  
+".\MLX90640_TEST_MCU32.axf" - 0 Errors, 0 Warning(s).

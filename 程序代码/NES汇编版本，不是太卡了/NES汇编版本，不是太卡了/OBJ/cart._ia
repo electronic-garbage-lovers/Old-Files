@@ -1,0 +1,5 @@
+--cpu Cortex-M3 -g --apcs=interwork 
+-I C:\Keil\ARM\RV31\INC 
+-I C:\Keil\ARM\CMSIS\Include 
+-I C:\Keil\ARM\Inc\ST\STM32F10x 
+--list ".\cart.lst" --xref -o "..\OBJ\cart.o" --depend "..\OBJ\cart.d" "..\HARDWARE\NES\cart.s"

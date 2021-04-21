@@ -1,0 +1,1 @@
+# Grove-Capacitive_Touch_Slide_Sensor-CY8C4014LQI

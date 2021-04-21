@@ -1,0 +1,21 @@
+Dependencies for Project 'MLX90640_TEST_MCU32', Target 'MLX90640_TEST_MCU32': (DO NOT MODIFY !)
+F (.\startup_stm32f10x_xl.s)(0x5DA85945)(--cpu Cortex-M3 -g --apcs=interwork -I C:\Keil_V4\ARM\RV31\INC -I C:\Keil_V4\ARM\CMSIS\Include -I C:\Keil_V4\ARM\Inc\ST\STM32F10x --list "startup_stm32f10x_xl.lst" --xref -o "startup_stm32f10x_xl.o" --depend "startup_stm32f10x_xl.d")
+F (.\main.c)(0x5F702A95)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I C:\Keil_V4\ARM\RV31\INC -I C:\Keil_V4\ARM\CMSIS\Include -I C:\Keil_V4\ARM\Inc\ST\STM32F10x -o "main.o" --omf_browse "main.crf" --depend "main.d")
+I (cpu.h)(0x5DA84A5C)
+I (IIC.h)(0x5DA962F8)
+I (MLX90640.h)(0x5DA91203)
+I (MLX90640_ExFun.h)(0x5DA94D1B)
+F (.\cpu.c)(0x5DA962F8)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I C:\Keil_V4\ARM\RV31\INC -I C:\Keil_V4\ARM\CMSIS\Include -I C:\Keil_V4\ARM\Inc\ST\STM32F10x -o "cpu.o" --omf_browse "cpu.crf" --depend "cpu.d")
+I (cpu.h)(0x5DA84A5C)
+F (.\IIC.c)(0x5DA962F8)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I C:\Keil_V4\ARM\RV31\INC -I C:\Keil_V4\ARM\CMSIS\Include -I C:\Keil_V4\ARM\Inc\ST\STM32F10x -o "iic.o" --omf_browse "iic.crf" --depend "iic.d")
+I (cpu.h)(0x5DA84A5C)
+I (iic.h)(0x5DA962F8)
+F (.\MLX90640.c)(0x5DA96BA7)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I C:\Keil_V4\ARM\RV31\INC -I C:\Keil_V4\ARM\CMSIS\Include -I C:\Keil_V4\ARM\Inc\ST\STM32F10x -o "mlx90640.o" --omf_browse "mlx90640.crf" --depend "mlx90640.d")
+I (iic.h)(0x5DA962F8)
+I (cpu.h)(0x5DA84A5C)
+I (MLX90640.h)(0x5DA91203)
+I (C:\Keil_V4\ARM\ARMCC\bin\..\include\math.h)(0x50F96150)
+F (.\MLX90640_ExFun.c)(0x5DA96EFC)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I C:\Keil_V4\ARM\RV31\INC -I C:\Keil_V4\ARM\CMSIS\Include -I C:\Keil_V4\ARM\Inc\ST\STM32F10x -o "mlx90640_exfun.o" --omf_browse "mlx90640_exfun.crf" --depend "mlx90640_exfun.d")
+I (MLX90640_ExFun.h)(0x5DA94D1B)
+I (cpu.h)(0x5DA84A5C)
+I (C:\Keil_V4\ARM\ARMCC\bin\..\include\math.h)(0x50F96150)

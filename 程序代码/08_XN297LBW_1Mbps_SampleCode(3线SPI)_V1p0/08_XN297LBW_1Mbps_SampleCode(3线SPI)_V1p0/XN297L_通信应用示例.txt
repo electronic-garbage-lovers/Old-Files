@@ -1,0 +1,104 @@
+//**************************************************************//
+//		XN297L	Application  Example			//
+//
+//
+//**************************************************************//
+
+//==============================================================//
+//		XN297L 发送示例					//
+//==============================================================//
+main()
+{
+	uint8_t ucPayload[8]={1，2，3，4，5,6,7,8};
+
+	RF_Init();	//在此函数中，应该确保和接收端的通信模式，RF 地址，Channel，发送速率和Payload长度一致。
+	RF_TxMode();
+
+	while(1)
+	{	
+		switch(ucRF_GetStatus())
+		{
+		case	TX_DS_FLAG: 		// 普通型发送完成 或 增强型发送成功
+			...
+			RF_ClearFIFO();
+      			RF_ClearStatus ();
+			break;
+		case	RX_TX_FLAG:		//发送成功且收到payload
+			...
+			RF_ClearFIFO();
+      			RF_ClearStatus ();
+			break;
+		case	MAX_RT_FLAG:		// 增强型发送超时失败
+			...
+			RF_ClearFIFO();
+      			RF_ClearStatus ();
+			break;
+		default:			// rf 处于空闲状态才发送数据
+			RF_TxData(ucPayload,PAYLOAD_WIDTH);
+			break;
+			
+		}
+	
+    		
+	}
+}
+
+
+//==============================================================//
+//		XN297L 接收示例					//
+//==============================================================//
+main()
+{
+	uint8_t ucPayload[8]={0}；
+
+	RF_Init();//在此函数中，应该确保和发送端的通信模式，RF 地址，Channel，发送速率和Payload长度一致。
+	RF_RxMode();
+
+	while(1)
+	{
+		
+		if(ucRF_DumpRxData(ucPayload, PAYLOAD_WIDTH))
+		{
+			//接收成功
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		switch(ucRF_GetStatus())
+		{
+		case TX_DS_FLAG:			// 普通型发送完成 或 增强型发送成功
+			RF_ClearFIFO();
+      			RF_ClearStatus ();
+			break;
+		case:MAX_RT_FLAG			// 增强型发送失败
+			RF_ClearFIFO();
+      			RF_ClearStatus ();
+			break;
+		case 0x60:				// 增强型发送成功，且收到payload
+			
+			

@@ -1,0 +1,44 @@
+void Code( )
+{
+//--------------- Power supply condition: VCC=IOVCC=VCI=2.8V ---------------//
+write_ctrl(0x0001); write_data(0x011C);
+write_ctrl(0x0002); write_data(0x0100); // LCD driver control
+write_ctrl(0x0003); write_data(0x1030); // 16-bit mode
+write_ctrl(0x0007); write_data(0x0000);
+write_ctrl(0x0008); write_data(0x0808);
+write_ctrl(0x000B); write_data(0x1100);
+write_ctrl(0x000C); write_data(0x0000);
+write_ctrl(0x000F); write_data(0x0501); // Start OSC
+write_ctrl(0x0015); write_data(0x0020);
+write_ctrl(0x0011); write_data(0x0018);
+write_ctrl(0x0012); write_data(0x1000);
+write_ctrl(0x0013); write_data(0x0063);
+write_ctrl(0x0014); write_data(0x4b66); // Setting VcomH / VcomAC
+write_ctrl(0x0010); write_data(0x0800);
+delayms(10);
+write_ctrl(0x0011); write_data(0x1038);
+delayms(10);
+//--------------- RAM Address Position -----------//
+write_ctrl(0x0036); write_data(0x00AF);
+write_ctrl(0x0037); write_data(0x0000);
+write_ctrl(0x0038); write_data(0x00DB);
+write_ctrl(0x0039); write_data(0x0000);
+write_ctrl(0x0020); write_data(0x0000);
+write_ctrl(0x0021); write_data(0x0000);
+//--------------- Gamma 2.2 control ---------------//
+write_ctrl(0x0050); write_data(0x0001);
+write_ctrl(0x0051); write_data(0x0308);    //0208
+write_ctrl(0x0052); write_data(0x0502);
+write_ctrl(0x0053); write_data(0x0301);    //0404
+write_ctrl(0x0054); write_data(0x0C0C);
+write_ctrl(0x0055); write_data(0x010A);   //000C
+write_ctrl(0x0056); write_data(0x0000);
+write_ctrl(0x0057); write_data(0x0400);
+write_ctrl(0x0058); write_data(0x1108);
+write_ctrl(0x0059); write_data(0x050C);
+
+write_ctrl(0x000F); write_data(0x1d01);
+write_ctrl(0x0007); write_data(0x0012);
+write_ctrl(0x0007); write_data(0x0017); // Display on
+delayms(50);
+}

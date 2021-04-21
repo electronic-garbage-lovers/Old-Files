@@ -1,0 +1,3 @@
+..\OBJ\6502.o: ..\HARDWARE\NES\6502.s
+..\OBJ\6502.o: ..\HARDWARE\NES\equates.h
+..\OBJ\6502.o: ..\HARDWARE\NES\6502mac.h

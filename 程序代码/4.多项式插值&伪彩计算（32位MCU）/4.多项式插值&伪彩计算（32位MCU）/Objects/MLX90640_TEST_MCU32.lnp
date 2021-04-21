@@ -1,0 +1,10 @@
+--cpu Cortex-M3
+".\objects\main.o"
+".\objects\cpu.o"
+".\objects\iic.o"
+".\objects\mlx90640.o"
+".\objects\mlx90640_exfun.o"
+--strict --scatter ".\Objects\MLX90640_TEST_MCU32.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\MLX90640_TEST_MCU32.map" -o .\Objects\MLX90640_TEST_MCU32.axf

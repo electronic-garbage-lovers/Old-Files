@@ -1,0 +1,20 @@
+  
+#######################################
+# Syntax Coloring Map For Grove_touch_sensor_CY8C40XX
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+KEYWORD1	CY8C
+
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+KEYWORD2	init
+KEYWORD2	get_touch_botton_value
+KEYWORD2	get_touch_slider_value
+#######################################
+# Constants (LITERAL1)
+#######################################

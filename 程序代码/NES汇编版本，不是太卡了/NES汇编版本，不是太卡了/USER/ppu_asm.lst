@@ -1,0 +1,42 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         
+    2 00000000         
+    3 00000000                 AREA             ppu_code, CODE, READONLY
+    4 00000000         
+    5 00000000         
+    6 00000000         
+    7 00000000         
+    8 00000000         
+    9 00000000         
+   10 00000000         
+   11 00000000         
+   12 00000000         
+   13 00000000         
+   14 00000000         
+   15 00000000         
+   16 00000000         
+   17 00000000                 END
+Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=..\OBJ\p
+pu_asm.d -o..\OBJ\ppu_asm.o -IC:\Keil\ARM\RV31\INC -IC:\Keil\ARM\CMSIS\Include 
+-IC:\Keil\ARM\Inc\ST\STM32F10x --list=.\ppu_asm.lst ..\HARDWARE\NES\ppu_asm.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+ppu_code 00000000
+
+Symbol: ppu_code
+   Definitions
+      At line 3 in file ..\HARDWARE\NES\ppu_asm.s
+   Uses
+      None
+Comment: ppu_code unused
+1 symbol
+331 symbols in table

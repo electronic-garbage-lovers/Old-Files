@@ -1,0 +1,2 @@
+Dependencies for Project 'MLX90640_TEST_MCU32', Target 'Target 1': (DO NOT MODIFY !)
+F (.\startup_stm32f10x_xl.s)(0x51C7AF80)(--cpu Cortex-M3 -g --apcs=interwork -I d:\Keil\ARM\RV31\INC-I d:\Keil\ARM\CMSIS\Include-I d:\Keil\ARM\Inc\ST\STM32F10x--list .\startup_stm32f10x_xl.lst --xref -o .\startup_stm32f10x_xl.o --depend .\startup_stm32f10x_xl.d)

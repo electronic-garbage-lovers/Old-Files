@@ -1,0 +1,988 @@
+﻿void SPI3_4_initial_BOE095_20181227(void) //timing 參考RM69310, MUX STR 222, VCL strong on, Gamma chop off
+{
+	        	//CMD2 WR EN
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0x00);
+			FPGA_spi_cs(1);		
+	
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xff);			
+			FPGA_spi_parameter_wr(0x22);
+			FPGA_spi_parameter_wr(0x01);
+			FPGA_spi_parameter_wr(0x01);			
+			FPGA_spi_parameter_wr(0x00);
+			FPGA_spi_cs(1);
+			
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0x80);
+			FPGA_spi_cs(1);
+			
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xff);			
+			FPGA_spi_parameter_wr(0x22);
+			FPGA_spi_parameter_wr(0x01);			
+			FPGA_spi_parameter_wr(0x00);
+			FPGA_spi_cs(1);
+			printf("SPI3/4 Initial step1 !............\n"); 
+
+			//OSC
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0x90);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xc1);			
+			FPGA_spi_parameter_wr(0x1e);			
+			FPGA_spi_parameter_wr(0x1e);
+			FPGA_spi_cs(1);	
+
+			//rtn
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0x80);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xc0);			
+			FPGA_spi_parameter_wr(0x00);			
+			FPGA_spi_parameter_wr(0xf1);
+			FPGA_spi_parameter_wr(0x00);			
+			FPGA_spi_parameter_wr(0x12);
+			FPGA_spi_parameter_wr(0x00);			
+			FPGA_spi_parameter_wr(0x12);
+			FPGA_spi_parameter_wr(0x00);			
+			FPGA_spi_parameter_wr(0xf1);
+			FPGA_spi_parameter_wr(0x00);			
+			FPGA_spi_parameter_wr(0x12);
+			FPGA_spi_parameter_wr(0x00);			
+			FPGA_spi_parameter_wr(0x12);
+			FPGA_spi_cs(1);	
+			
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0x90);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xc0);			
+			FPGA_spi_parameter_wr(0x00);			
+			FPGA_spi_parameter_wr(0xf1);
+			FPGA_spi_parameter_wr(0x00);			
+			FPGA_spi_parameter_wr(0x12);
+			FPGA_spi_parameter_wr(0x00);			
+			FPGA_spi_parameter_wr(0x12);
+			FPGA_spi_parameter_wr(0x00);			
+			FPGA_spi_parameter_wr(0xf1);
+			FPGA_spi_parameter_wr(0x00);			
+			FPGA_spi_parameter_wr(0x12);
+			FPGA_spi_parameter_wr(0x00);			
+			FPGA_spi_parameter_wr(0x12);
+			FPGA_spi_cs(1);	
+			
+			//Hacitve/Vactive
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0xa1);
+			FPGA_spi_cs(1);		
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xb3);			
+			FPGA_spi_parameter_wr(0x78);
+			FPGA_spi_parameter_wr(0x00);
+			FPGA_spi_parameter_wr(0xF0);
+			FPGA_spi_parameter_wr(0x00);
+			FPGA_spi_parameter_wr(0xF0);
+			FPGA_spi_parameter_wr(0x00);
+			FPGA_spi_parameter_wr(0xF0);
+			FPGA_spi_cs(1);	
+			
+			//source resolution
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0x82);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xb2);						
+			FPGA_spi_parameter_wr(0x66);
+			FPGA_spi_cs(1);		
+						
+			//120 setting
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0x83);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xf3);						
+			FPGA_spi_parameter_wr(0x60);		
+			FPGA_spi_parameter_wr(0x80);
+			FPGA_spi_cs(1);								
+			//printf("SPI3/4 Initial step2!............\n"); 			
+			
+			//GOA
+			//CKV1 STR END
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0x90);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xc2);						
+			FPGA_spi_parameter_wr(0x83);	
+			FPGA_spi_parameter_wr(0x01);	
+			FPGA_spi_cs(1);		
+				
+			//CKV1
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0x95);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xc2);						
+			FPGA_spi_parameter_wr(0xe5);//0c	//e5	
+			FPGA_spi_parameter_wr(0x00);//00		
+			FPGA_spi_parameter_wr(0xdd);//04	//db	
+			FPGA_spi_cs(1);			
+			
+			//CKV2 STR END
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0x98);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xc2);						
+			FPGA_spi_parameter_wr(0x82);	
+			FPGA_spi_parameter_wr(0x01);
+			FPGA_spi_parameter_wr(0x01);
+			FPGA_spi_cs(1);	
+	
+			//CKV2
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0x9d);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xc2);						
+			FPGA_spi_parameter_wr(0x98);//b0		//95
+			FPGA_spi_parameter_wr(0x12);//00		//13	
+			FPGA_spi_parameter_wr(0x00);//08	
+			FPGA_spi_cs(1);		
+
+			//STE
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0xf0);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xc3);					
+			FPGA_spi_parameter_wr(0x83);//	
+			FPGA_spi_parameter_wr(0x00);//
+			FPGA_spi_parameter_wr(0x00);//
+			FPGA_spi_parameter_wr(0x44);//	
+			FPGA_spi_parameter_wr(0x00);//db	
+			FPGA_spi_parameter_wr(0xdb);//20	
+			FPGA_spi_parameter_wr(0x20);//00	
+			FPGA_spi_cs(1);	
+	
+			//STE width
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0x0d);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xca);					
+			FPGA_spi_parameter_wr(0x05);//	
+			FPGA_spi_parameter_wr(0x05);//
+			FPGA_spi_parameter_wr(0x05);//	
+			FPGA_spi_cs(1);	
+			
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0x10);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xca);					
+			FPGA_spi_parameter_wr(0x05);//	
+			FPGA_spi_parameter_wr(0x05);//
+			FPGA_spi_parameter_wr(0x05);//			
+			FPGA_spi_parameter_wr(0x05);//	
+			FPGA_spi_parameter_wr(0x05);//
+			FPGA_spi_parameter_wr(0x05);//	
+			FPGA_spi_parameter_wr(0x40);//	3e			
+			FPGA_spi_parameter_wr(0x40);//	
+			FPGA_spi_parameter_wr(0x40);//	
+			FPGA_spi_parameter_wr(0x40);//	
+			FPGA_spi_parameter_wr(0x40);//	
+			FPGA_spi_parameter_wr(0x40);//	
+			FPGA_spi_parameter_wr(0x40);//	
+			FPGA_spi_parameter_wr(0x40);//	
+			FPGA_spi_parameter_wr(0x40);//	
+			FPGA_spi_cs(1);	
+
+			//STE in skipframe
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0xfa);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xc3);					
+			FPGA_spi_parameter_wr(0x7b);//82	
+			FPGA_spi_parameter_wr(0x0b);//03	
+			FPGA_spi_cs(1);
+	
+			//GSTV
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0xb0);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xc2);						
+			FPGA_spi_parameter_wr(0x00);		
+			FPGA_spi_parameter_wr(0x02);			
+			FPGA_spi_parameter_wr(0x00);			
+			FPGA_spi_parameter_wr(0x8d);//a4	//89		
+			FPGA_spi_parameter_wr(0x00);			
+			FPGA_spi_parameter_wr(0x21);//3a	//1f	
+			FPGA_spi_cs(1);				
+			
+			//EN mode
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0x80);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xc3);
+			FPGA_spi_parameter_wr(0x00);
+			FPGA_spi_parameter_wr(0x07);
+			FPGA_spi_parameter_wr(0x07);
+			FPGA_spi_parameter_wr(0x07);
+			FPGA_spi_parameter_wr(0x07);
+			FPGA_spi_parameter_wr(0x07);
+			FPGA_spi_parameter_wr(0x07);
+			FPGA_spi_parameter_wr(0x07);
+			FPGA_spi_parameter_wr(0x07);
+			FPGA_spi_parameter_wr(0x07);	
+			FPGA_spi_parameter_wr(0x00);
+			FPGA_spi_cs(1);			
+			
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0x90);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xc3);
+			FPGA_spi_parameter_wr(0x04);
+			FPGA_spi_parameter_wr(0xfb);
+			FPGA_spi_parameter_wr(0xfb);
+			FPGA_spi_parameter_wr(0xfb);
+			FPGA_spi_parameter_wr(0xfb);
+			FPGA_spi_parameter_wr(0xfb);
+			FPGA_spi_parameter_wr(0xfb);
+			FPGA_spi_parameter_wr(0xfb);
+			FPGA_spi_parameter_wr(0xfb);
+			FPGA_spi_parameter_wr(0xfb);	
+			FPGA_spi_parameter_wr(0x04);
+			FPGA_spi_cs(1);						
+			
+			//GOA out sel
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0xa0);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xc3);
+			FPGA_spi_parameter_wr(0x16);
+			FPGA_spi_parameter_wr(0x16);
+			FPGA_spi_parameter_wr(0x16);
+			FPGA_spi_parameter_wr(0x16);
+			FPGA_spi_parameter_wr(0x15);
+			FPGA_spi_parameter_wr(0x05);
+			FPGA_spi_parameter_wr(0x06);
+			FPGA_spi_parameter_wr(0x16);
+			FPGA_spi_parameter_wr(0x16);
+			FPGA_spi_parameter_wr(0x16);	
+			FPGA_spi_parameter_wr(0x16);
+			FPGA_spi_parameter_wr(0x16);
+			FPGA_spi_parameter_wr(0x16);	
+			FPGA_spi_parameter_wr(0x04);
+			FPGA_spi_parameter_wr(0x05);
+			FPGA_spi_parameter_wr(0x06);
+			FPGA_spi_cs(1);			
+			
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0xb0);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xc3);
+			FPGA_spi_parameter_wr(0x16);
+			FPGA_spi_parameter_wr(0x16);
+			FPGA_spi_parameter_wr(0x16);
+			FPGA_spi_parameter_wr(0x16);
+			FPGA_spi_parameter_wr(0x16);
+			FPGA_spi_parameter_wr(0x16);
+			FPGA_spi_parameter_wr(0x16);
+			FPGA_spi_parameter_wr(0x11);
+			FPGA_spi_parameter_wr(0x09);
+			FPGA_spi_parameter_wr(0x0a);
+			FPGA_spi_parameter_wr(0x01);
+			FPGA_spi_parameter_wr(0x02);
+			FPGA_spi_parameter_wr(0x03);	
+			FPGA_spi_parameter_wr(0x16);
+			FPGA_spi_parameter_wr(0x16);
+			FPGA_spi_parameter_wr(0x16);
+			FPGA_spi_cs(1);
+
+			//SW out SET
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0xc0);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xc2);						
+			FPGA_spi_parameter_wr(0x32);		
+			FPGA_spi_parameter_wr(0x54);	
+			FPGA_spi_parameter_wr(0x10);					
+			FPGA_spi_parameter_wr(0x23);		
+			FPGA_spi_parameter_wr(0x45);		
+			FPGA_spi_parameter_wr(0x01);								
+			FPGA_spi_parameter_wr(0x35);		
+			FPGA_spi_parameter_wr(0x24);		
+			FPGA_spi_parameter_wr(0x01);		
+			FPGA_spi_cs(1);							
+			
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0xd0);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xc2);								
+			FPGA_spi_parameter_wr(0x32);//23	
+			FPGA_spi_parameter_wr(0x54);//45	
+			FPGA_spi_parameter_wr(0x10);//01					
+			FPGA_spi_parameter_wr(0x23);//32		
+			FPGA_spi_parameter_wr(0x45);//54		
+			FPGA_spi_parameter_wr(0x01);//10								
+			FPGA_spi_parameter_wr(0x35);		
+			FPGA_spi_parameter_wr(0x24);		
+			FPGA_spi_parameter_wr(0x01);			
+			FPGA_spi_cs(1);		
+			
+			//CKH
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0xf0);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xc2);						
+			FPGA_spi_parameter_wr(0x00);//04	//02
+			FPGA_spi_parameter_wr(0x00);//06	//02	
+			FPGA_spi_parameter_wr(0x02);//05	//02	
+			FPGA_spi_parameter_wr(0x0f);//11	//11		
+			FPGA_spi_parameter_wr(0x02);//05	//02	
+			FPGA_spi_parameter_wr(0x0f);//11	//11		
+			FPGA_spi_parameter_wr(0x02);//04	//02  //06
+			FPGA_spi_parameter_wr(0x0f);//11	//11		
+			FPGA_spi_parameter_wr(0x02);//05	//02	
+			FPGA_spi_parameter_wr(0x0f);//11	//11		
+			FPGA_spi_parameter_wr(0x02);//05	//02
+			FPGA_spi_parameter_wr(0x0f);//11	//11		
+			FPGA_spi_parameter_wr(0x02);//07	//02   //06
+			FPGA_spi_parameter_wr(0x0f);//11	//11	
+			FPGA_spi_cs(1);			
+			
+			//MUX					
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0xa0);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xc0);						
+			FPGA_spi_parameter_wr(0x00);//0d	
+			FPGA_spi_parameter_wr(0x1a);//1a		
+			FPGA_spi_parameter_wr(0x1a);//1a	
+			FPGA_spi_parameter_wr(0x1a);//1a		
+			FPGA_spi_parameter_wr(0x1a);//1a		
+			FPGA_spi_parameter_wr(0x1a);//1a		
+			FPGA_spi_parameter_wr(0x1a);//1a				
+			FPGA_spi_parameter_wr(0x00);//0d	//idle
+			FPGA_spi_parameter_wr(0x1a);//1a		
+			FPGA_spi_parameter_wr(0x1a);//1a		
+			FPGA_spi_parameter_wr(0x1a);//1a		
+			FPGA_spi_parameter_wr(0x1a);//1a		
+			FPGA_spi_parameter_wr(0x1a);//1a		
+			FPGA_spi_parameter_wr(0x1a);//1a	
+			FPGA_spi_cs(1);														
+				
+			//Source pch off	
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0x92);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xf5);						
+			FPGA_spi_parameter_wr(0x20);	//off
+			FPGA_spi_cs(1);												
+				
+			//PCH	
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0xe1);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xc2);						
+			FPGA_spi_parameter_wr(0x00);	//off
+			FPGA_spi_cs(1);												
+				
+			//EQ
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0xe0);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xc3);						
+			FPGA_spi_parameter_wr(0x00);	
+			FPGA_spi_parameter_wr(0x11);	//22  //11	
+			FPGA_spi_parameter_wr(0x00);		
+			FPGA_spi_parameter_wr(0x11);	//22	//11	
+			FPGA_spi_cs(1);		
+		
+			//SAP	
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0x44);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xc5);						
+			FPGA_spi_parameter_wr(0xca);	
+			FPGA_spi_cs(1);
+			
+			//AP	
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0x40);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xc5);						
+			FPGA_spi_parameter_wr(0x29);	
+			FPGA_spi_cs(1);
+
+			//chop
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0x65);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xc4);						
+			FPGA_spi_parameter_wr(0xc0);	//0xc0
+			FPGA_spi_cs(1);
+			
+			//Gamma chop off
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0x68);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xc4);						
+			FPGA_spi_parameter_wr(0x01);	
+			FPGA_spi_cs(1);			
+
+			//VCL SET
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0x14);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xc5);						
+			FPGA_spi_parameter_wr(0x12);		
+			FPGA_spi_cs(1);	
+
+			//AVDD
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0x11);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xc5);						
+			FPGA_spi_parameter_wr(0x4a);	//5.5				
+			FPGA_spi_parameter_wr(0x4a);		
+			FPGA_spi_cs(1);	
+
+			//TCON
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0xa1); 
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xc1);						
+			FPGA_spi_parameter_wr(0xc0); //video mode HS follow external, CMD mode HS follow internal
+			FPGA_spi_parameter_wr(0xe3);		
+			FPGA_spi_cs(1);				
+
+			//Timeout VS
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0xa8);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xc1);						
+			FPGA_spi_parameter_wr(0x0a);		
+			FPGA_spi_cs(1);	
+
+			//cke toggle all
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);	
+			FPGA_spi_parameter_wr(0xa8);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xc2);	
+			FPGA_spi_parameter_wr(0x54);	//28	
+			FPGA_spi_cs(1);	
+
+			//mipi off
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0x90);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xff);						
+			FPGA_spi_parameter_wr(0x80);		
+			FPGA_spi_cs(1);	
+
+			//vrefp5 vrefn5
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0x42);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xc5);						
+			FPGA_spi_parameter_wr(0x33);				
+			FPGA_spi_parameter_wr(0x44);		
+			FPGA_spi_cs(1);	
+
+			//voltageset VGMP VGSP
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0x31);
+			FPGA_spi_cs(1);		
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xc5);			
+			FPGA_spi_parameter_wr(0xd6);//cf=5.1v, fe=5.8V, e3=5.4V
+			FPGA_spi_parameter_wr(0xbb);//VGSP ae=2.8 ca=3.225 dd=3.51	f0=3.8 e6=3.645 e9=3.69 eb=3.72 ea=3.705  d2=3.345 da=3.465
+			FPGA_spi_parameter_wr(0xd6);//cf = 5.1
+			FPGA_spi_parameter_wr(0xbb);//ca=3.225		//d8=3.435	//d5=3.39
+			FPGA_spi_cs(1);
+
+			//ELVSS
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0x01);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xcb);			
+			FPGA_spi_parameter_wr(0x15);			
+			FPGA_spi_cs(1);	
+      
+			//mirror x
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0xd0);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xc0);			
+			FPGA_spi_parameter_wr(0x04);			
+			FPGA_spi_cs(1);	
+
+			//VGH/VGL
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0x02);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xc5);			
+			FPGA_spi_parameter_wr(0x05);						
+			FPGA_spi_parameter_wr(0xc5);			
+			FPGA_spi_parameter_wr(0x24);		//24	
+			FPGA_spi_parameter_wr(0x24);		//24	
+			FPGA_spi_cs(1);	
+
+			//VGH/VGL pump
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0x00);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xc5);			
+			FPGA_spi_parameter_wr(0x5b);						
+			FPGA_spi_parameter_wr(0x5b);			
+			FPGA_spi_cs(1);	
+
+			//vrefp5 off
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0x6c);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xf5);			
+			FPGA_spi_parameter_wr(0x00);			
+			FPGA_spi_cs(1);	
+
+			//bvp3d bvn3d off
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0x6b);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xc4);			
+			FPGA_spi_parameter_wr(0xb6);			
+			FPGA_spi_cs(1);	
+
+      			//skipframe
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0xf0);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xc0);						
+			FPGA_spi_parameter_wr(0x26);	
+			FPGA_spi_cs(1);
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0xf4);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xc0);						
+			FPGA_spi_parameter_wr(0x03);	//0b:5Hz 03:15Hz
+			FPGA_spi_cs(1);
+
+      			//SPI: SCL can stay at low level
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0x86);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xb2);			
+			FPGA_spi_parameter_wr(0x49);			
+			FPGA_spi_cs(1);	
+
+      			//RGB/BGR follow 36h
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0x92);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xc4);			
+			FPGA_spi_parameter_wr(0xe0);			
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);			
+			FPGA_spi_parameter_wr(0x93);
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xc4);			
+			FPGA_spi_parameter_wr(0x02);			
+			FPGA_spi_cs(1);	
+
+			//NB/NW
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);//Cmd
+			FPGA_spi_parameter_wr(0xa0);//Data
+			FPGA_spi_cs(1);	
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xb3);//Cmd
+			FPGA_spi_parameter_wr(0x00);//Data		
+			FPGA_spi_cs(1);				
+
+			//GAMMA 1
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);
+			FPGA_spi_parameter_wr(0x00);
+			FPGA_spi_cs(1);
+			
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xc8);
+			FPGA_spi_parameter_wr(0xFF);
+			FPGA_spi_parameter_wr(0x95);
+			FPGA_spi_parameter_wr(0x78);
+			FPGA_spi_parameter_wr(0x60);
+			FPGA_spi_parameter_wr(0xFF);
+			FPGA_spi_parameter_wr(0x48);
+			FPGA_spi_parameter_wr(0x25);
+			FPGA_spi_parameter_wr(0x08);
+			FPGA_spi_parameter_wr(0xF0);
+			FPGA_spi_parameter_wr(0xBF);
+			FPGA_spi_parameter_wr(0xD8);
+			FPGA_spi_parameter_wr(0xB1);
+			FPGA_spi_parameter_wr(0x8E);
+			FPGA_spi_parameter_wr(0x6B);
+			FPGA_spi_parameter_wr(0xAA);
+			FPGA_spi_parameter_wr(0x4C);
+			FPGA_spi_parameter_wr(0x2F);
+			FPGA_spi_parameter_wr(0x12);
+			FPGA_spi_parameter_wr(0xF5);
+			FPGA_spi_parameter_wr(0x6A);
+			FPGA_spi_parameter_wr(0xD9);
+			FPGA_spi_parameter_wr(0xBE);
+			FPGA_spi_parameter_wr(0xA3);
+			FPGA_spi_parameter_wr(0x95);
+			FPGA_spi_parameter_wr(0x55);
+			FPGA_spi_parameter_wr(0x86);
+			FPGA_spi_parameter_wr(0x78);
+			FPGA_spi_parameter_wr(0x6A);
+			FPGA_spi_parameter_wr(0x5E);
+			FPGA_spi_parameter_wr(0x55);
+			FPGA_spi_parameter_wr(0x56);
+			FPGA_spi_parameter_wr(0x54);
+			FPGA_spi_parameter_wr(0x52);
+			FPGA_spi_parameter_wr(0x15);
+			FPGA_spi_parameter_wr(0xFF);
+			FPGA_spi_parameter_wr(0x8B);
+			FPGA_spi_parameter_wr(0x74);
+			FPGA_spi_parameter_wr(0x5C);
+			FPGA_spi_parameter_wr(0xFF);
+			FPGA_spi_parameter_wr(0x47);
+			FPGA_spi_parameter_wr(0x25);
+			FPGA_spi_parameter_wr(0x08);
+			FPGA_spi_parameter_wr(0xF1);
+			FPGA_spi_parameter_wr(0xBF);
+			FPGA_spi_parameter_wr(0xD9);
+			FPGA_spi_parameter_wr(0xB3);
+			FPGA_spi_parameter_wr(0x91);
+			FPGA_spi_parameter_wr(0x70);
+			FPGA_spi_parameter_wr(0xAA);
+			FPGA_spi_parameter_wr(0x52);
+			FPGA_spi_parameter_wr(0x35);
+			FPGA_spi_parameter_wr(0x18);
+			FPGA_spi_parameter_wr(0xFC);
+			FPGA_spi_parameter_wr(0x6A);
+			FPGA_spi_parameter_wr(0xE3);
+			FPGA_spi_parameter_wr(0xC7);
+			FPGA_spi_parameter_wr(0xAD);
+			FPGA_spi_parameter_wr(0xA1);
+			FPGA_spi_parameter_wr(0x55);
+			FPGA_spi_parameter_wr(0x94);
+			FPGA_spi_parameter_wr(0x86);
+			FPGA_spi_parameter_wr(0x79);
+			FPGA_spi_parameter_wr(0x6B);
+			FPGA_spi_parameter_wr(0x55);
+			FPGA_spi_parameter_wr(0x66);
+			FPGA_spi_parameter_wr(0x63);
+			FPGA_spi_parameter_wr(0x61);
+			FPGA_spi_parameter_wr(0x15);
+			FPGA_spi_cs(1);
+
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);
+			FPGA_spi_parameter_wr(0x44);
+			FPGA_spi_cs(1);
+			
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xc8);
+			FPGA_spi_parameter_wr(0xFF);
+			FPGA_spi_parameter_wr(0x66);
+			FPGA_spi_parameter_wr(0x48);
+			FPGA_spi_parameter_wr(0x2F);
+			FPGA_spi_parameter_wr(0xFF);
+			FPGA_spi_parameter_wr(0x16);
+			FPGA_spi_parameter_wr(0xF0);
+			FPGA_spi_parameter_wr(0xD0);
+			FPGA_spi_parameter_wr(0xB3);
+			FPGA_spi_parameter_wr(0xAB);
+			FPGA_spi_parameter_wr(0x97);
+			FPGA_spi_parameter_wr(0x68);
+			FPGA_spi_parameter_wr(0x40);
+			FPGA_spi_parameter_wr(0x16);
+			FPGA_spi_parameter_wr(0xAA);
+			FPGA_spi_parameter_wr(0xF1);
+			FPGA_spi_parameter_wr(0xCB);
+			FPGA_spi_parameter_wr(0xA8);
+			FPGA_spi_parameter_wr(0x84);
+			FPGA_spi_parameter_wr(0x55);
+			FPGA_spi_parameter_wr(0x62);
+			FPGA_spi_parameter_wr(0x3E);
+			FPGA_spi_parameter_wr(0x1A);
+			FPGA_spi_parameter_wr(0x08);
+			FPGA_spi_parameter_wr(0x55);
+			FPGA_spi_parameter_wr(0xF7);
+			FPGA_spi_parameter_wr(0xE5);
+			FPGA_spi_parameter_wr(0xD5);
+			FPGA_spi_parameter_wr(0xC3);
+			FPGA_spi_parameter_wr(0x00);
+			FPGA_spi_parameter_wr(0xB9);
+			FPGA_spi_parameter_wr(0xB6);
+			FPGA_spi_parameter_wr(0xB4);
+			FPGA_spi_parameter_wr(0x00);
+			FPGA_spi_cs(1);
+
+			//GAMMA 2
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);
+			FPGA_spi_parameter_wr(0x00);
+			FPGA_spi_cs(1);
+			
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xE8);
+			FPGA_spi_parameter_wr(0xFF);
+			FPGA_spi_parameter_wr(0xA7);
+			FPGA_spi_parameter_wr(0x9D);
+			FPGA_spi_parameter_wr(0x94);
+			FPGA_spi_parameter_wr(0xFF);
+			FPGA_spi_parameter_wr(0x87);
+			FPGA_spi_parameter_wr(0x70);
+			FPGA_spi_parameter_wr(0x60);
+			FPGA_spi_parameter_wr(0x4E);
+			FPGA_spi_parameter_wr(0xFF);
+			FPGA_spi_parameter_wr(0x44);
+			FPGA_spi_parameter_wr(0x34);
+			FPGA_spi_parameter_wr(0x23);
+			FPGA_spi_parameter_wr(0x13);
+			FPGA_spi_parameter_wr(0xFF);
+			FPGA_spi_parameter_wr(0x02);
+			FPGA_spi_parameter_wr(0xF2);
+			FPGA_spi_parameter_wr(0xE1);
+			FPGA_spi_parameter_wr(0xD0);
+			FPGA_spi_parameter_wr(0xAB);
+			FPGA_spi_parameter_wr(0xC0);
+			FPGA_spi_parameter_wr(0xB0);
+			FPGA_spi_parameter_wr(0xA0);
+			FPGA_spi_parameter_wr(0x98);
+			FPGA_spi_parameter_wr(0xAA);
+			FPGA_spi_parameter_wr(0x90);
+			FPGA_spi_parameter_wr(0x88);
+			FPGA_spi_parameter_wr(0x80);
+			FPGA_spi_parameter_wr(0x78);
+			FPGA_spi_parameter_wr(0xAA);
+			FPGA_spi_parameter_wr(0x74);
+			FPGA_spi_parameter_wr(0x71);
+			FPGA_spi_parameter_wr(0x70);
+			FPGA_spi_parameter_wr(0x2A);
+			FPGA_spi_parameter_wr(0xFF);
+			FPGA_spi_parameter_wr(0x9A);
+			FPGA_spi_parameter_wr(0x93);
+			FPGA_spi_parameter_wr(0x89);
+			FPGA_spi_parameter_wr(0xFF);
+			FPGA_spi_parameter_wr(0x82);
+			FPGA_spi_parameter_wr(0x69);
+			FPGA_spi_parameter_wr(0x5A);
+			FPGA_spi_parameter_wr(0x4A);
+			FPGA_spi_parameter_wr(0xFF);
+			FPGA_spi_parameter_wr(0x42);
+			FPGA_spi_parameter_wr(0x32);
+			FPGA_spi_parameter_wr(0x22);
+			FPGA_spi_parameter_wr(0x12);
+			FPGA_spi_parameter_wr(0xFF);
+			FPGA_spi_parameter_wr(0x02);
+			FPGA_spi_parameter_wr(0xF2);
+			FPGA_spi_parameter_wr(0xE2);
+			FPGA_spi_parameter_wr(0xD2);
+			FPGA_spi_parameter_wr(0xAB);
+			FPGA_spi_parameter_wr(0xC2);
+			FPGA_spi_parameter_wr(0xB2);
+			FPGA_spi_parameter_wr(0xA2);
+			FPGA_spi_parameter_wr(0x9A);
+			FPGA_spi_parameter_wr(0xAA);
+			FPGA_spi_parameter_wr(0x92);
+			FPGA_spi_parameter_wr(0x8A);
+			FPGA_spi_parameter_wr(0x82);
+			FPGA_spi_parameter_wr(0x7A);
+			FPGA_spi_parameter_wr(0xAA);
+			FPGA_spi_parameter_wr(0x76);
+			FPGA_spi_parameter_wr(0x74);
+			FPGA_spi_parameter_wr(0x73);
+			FPGA_spi_parameter_wr(0x2A);
+			FPGA_spi_cs(1);
+			
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0x00);
+			FPGA_spi_parameter_wr(0x44);
+			FPGA_spi_cs(1);
+			
+			FPGA_spi_cs(0);
+			FPGA_spi_cmd_wr(0xE8);
+			FPGA_spi_parameter_wr(0xFF);
+			FPGA_spi_parameter_wr(0x7A);
+			FPGA_spi_parameter_wr(0x70);
+			FPGA_spi_parameter_wr(0x65);
+			FPGA_spi_parameter_wr(0xFF);
+			FPGA_spi_parameter_wr(0x58);
+			FPGA_spi_parameter_wr(0x3F);
+			FPGA_spi_parameter_wr(0x2E);
+			FPGA_spi_parameter_wr(0x1A);
+			FPGA_spi_parameter_wr(0xFF);
+			FPGA_spi_parameter_wr(0x11);
+			FPGA_spi_parameter_wr(0xFE);
+			FPGA_spi_parameter_wr(0xEA);
+			FPGA_spi_parameter_wr(0xD9);
+			FPGA_spi_parameter_wr(0xAB);
+			FPGA_spi_parameter_wr(0xC6);
+			FPGA_spi_parameter_wr(0xB4);
+			FPGA_spi_parameter_wr(0xA2);
+			FPGA_spi_parameter_wr(0x8C);
+			FPGA_spi_parameter_wr(0xAA);
+			FPGA_spi_parameter_wr(0x7A);
+			FPGA_spi_parameter_wr(0x67);
+			FPGA_spi_parameter_wr(0x55);
+			FPGA_spi_parameter_wr(0x4C);
+			FPGA_spi_parameter_wr(0xAA);
+			FPGA_spi_parameter_wr(0x42);
+			FPGA_spi_parameter_wr(0x38);
+			FPGA_spi_parameter_wr(0x2E);
+			FPGA_spi_parameter_wr(0x26);
+			FPGA_spi_parameter_wr(0xAA);
+			FPGA_spi_parameter_wr(0x1F);
+			FPGA_spi_parameter_wr(0x1A);
+			FPGA_spi_parameter_wr(0x19);
+			FPGA_spi_parameter_wr(0x2A);
+			FPGA_spi_cs(1);
+
+}
+

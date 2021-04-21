@@ -1,0 +1,25 @@
+*** Creating Trace Output File 'MLX90640_TEST_MCU32.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"startup_stm32f10x_xl.o"'
+### List of Objects: adding '"main.o"'
+### List of Objects: adding '"cpu.o"'
+### List of Objects: adding '"iic.o"'
+### List of Objects: adding '"mlx90640.o"'
+### List of Objects: adding '"mlx90640_exfun.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M3 "startup_stm32f10x_xl.o" "main.o" "cpu.o" "iic.o" "mlx90640.o" "mlx90640_exfun.o" 
+--strict --scatter "MLX90640_TEST_MCU32.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\MLX90640_TEST_MCU32.map" -o MLX90640_TEST_MCU32.axf### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'MLX90640_TEST_MCU32.axf'
+### ADS-LD Command File: 'MLX90640_TEST_MCU32.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'MLX90640_TEST_MCU32.lnp', Handle=0x000001A0
+### Writing '.lnp' file
+### ADS-LD Command file 'MLX90640_TEST_MCU32.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.
